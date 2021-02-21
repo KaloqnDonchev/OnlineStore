@@ -1,0 +1,32 @@
+<% _.each(categories, function(topC) { %>
+    <input type="hidden" name="page_id" id="page_id" value=<%= topC.id; %> >
+    <% _.each(topC.categories, function(bottomC) { %>
+        <% _.each(bottomC.categories, function(subC) { %>
+            <% if(subC.parent_category_id === id){ %>
+                <div class="sub-category">
+                    <div class="row">
+                        <div class="col-md-12">
+                              <h2><%= subC.name%></h2>
+                          </div>
+                          <% if(subC.image){ %>
+                            <div class="col-md-12">
+                                <img src="./images/<%=subC.image%>" alt="" class="img-zoom">
+                            </div>
+                          <% } %>
+                          <div class="col-md-12">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi quo delectus in rerum omnis ipsum maiores autem itaque totam quasi fugit voluptatibus sunt consectetur deleniti sapiente accusamus repudiandae velit perferendis at, debitis quam nisi exercitationem, beatae. A, eum, dolores aliquid, vitae rem libero hic ex nulla quasi sapiente vero!</p>
+                          </div>
+                        <div class="col-md">
+                            <% if(subC.name !== 'Feeling Red') { %>
+                                <a href="products?id=<%=subC.id%>&&description=<%=subC.page_description%>&&title=<%=subC.page_title%>" class="btn btn-primary">View Products</a>
+                            <% } else { %>
+                                <a href="feeling_red?id=<%=subC.id%>&&description=<%=subC.page_description%>&&title=<%=subC.page_title%>&&parent=<%=subC.parent_category_id%>" class="btn btn-primary">View Products</a>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            <% } %>
+        <% }); %>
+    <% }); %>
+<% }); %>

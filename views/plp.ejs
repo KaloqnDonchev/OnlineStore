@@ -1,0 +1,206 @@
+<%- include header.ejs %>
+
+<div class="mobile-search-filter-nav row d-lg-none">
+    <button class="filter-button"><div><?xml version="1.0" encoding="iso-8859-1"?> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 385.201 385.201" style="width: 20px;enable-background:new 0 0 385.201 385.201;" xml:space="preserve"> <g> <path id="Border_Arrow_Left" d="M3.543,201.729L183.323,381.51c2.43,2.43,5.618,3.621,8.794,3.597c0.096,0,0.168,0.048,0.265,0.048 h180.455c6.641,0,12.03-5.39,12.03-12.03c0-0.096-0.048-0.168-0.048-0.265c0.024-3.176-1.167-6.364-3.597-8.794L209.826,192.682 L381.583,20.938c4.824-4.824,4.824-12.644,0-17.468c-2.863-2.863-6.749-3.814-10.466-3.284H194.139 c-3.717-0.529-7.603,0.421-10.466,3.284L3.555,183.575c-2.502,2.502-3.645,5.799-3.549,9.083 C-0.091,195.93,1.04,199.227,3.543,201.729z M197.82,24.246h145.519L184.009,183.575c-2.502,2.502-3.645,5.799-3.549,9.083 c-0.096,3.272,1.047,6.569,3.549,9.071l159.365,159.365H197.784L29.372,192.682L197.82,24.246z"/></svg></div></button>
+    <p>Filters <span>5</span></p>
+    <p class="small-offset-6">Search</p>
+    <i class="fas fa-search"></i>
+</div>
+
+<div class="mobile-filter">
+    <div class="row filter-top-nav no-gutters">
+        <div class=""><p>Filters<span>5</span></p></div>
+        <p><i class="arrow arrow-right back-button" style="border-color: white;"></i></p>
+    </div>
+    <div class="activity-filter-btn dropdwn-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>ACTIVITY</h3>
+        <p><i class="arrow arrow-down arrow-dropdown"></i></p>
+    </div>
+    <div class="activity-dropdown drpdwn-menu">
+        <div>
+            <p><i class="check"></i></p>
+            <h4>SNOW</h4>
+        </div>
+        <hr style="margin-left: 15%;">
+        <div>
+            <h4>WHEELS</h4>
+            <hr>
+        </div>
+        <div><h4>ROAD</h4></div>
+    </div>
+    <div class="producttype-filter-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>PRODUCT TYPE</h3>
+        <p><i class="arrow arrow-down"></i></p>
+    </div>
+    <div class="gender-filter-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>GENDER</h3>
+        <p><i class="arrow arrow-down"></i></p>
+    </div>
+    <div class="price-filter-btn dropdwn-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>PRICE</h3>
+        <p><i class="arrow arrow-down arrow-dropdown"></i></p>
+    </div>
+    <div class="price-dropdown drpdwn-menu">
+        <p class="min-price-text"></p>
+        <p class="max-price-text"></p>
+        <div slider id="slider-distance">
+            <div>
+                <div inverse-left style="width:70%;"></div>
+                <div inverse-right style="width:70%;"></div>
+                <div range style="left:30%;right:40%;"></div>
+                <span thumb style="left:30%;"></span>
+                <span thumb style="left:60%;"></span>
+                <div sign style="left:30%;">
+                    <span id="value">30</span>
+                </div>
+                <div sign style="left:60%;">
+                    <span id="value">60</span>
+                </div>
+            </div>
+            <input class="min-range-handler" type="range" tabindex="0" value="30" max="100" min="0" step="1" />
+        
+            <input class="max-range-handler" type="range" tabindex="0" value="60" max="100" min="0" step="1"  />
+        </div>
+        <p id="min-price">min value: </p>
+        <p id="max-price">max value: </p>
+    </div>
+    <div class="color-filter-btn dropdwn-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>COLOR</h3>
+        <p><i class="arrow arrow-down arrow-dropdown"></i></p>
+    </div>
+    <div class="color-dropdown drpdwn-menu">
+        <div class="color-cubes row no-gutters" style="justify-content: space-around; margin: 10px 50px">
+            <p class="color-cube-green"></p>
+            <p class="color-cube-black"></p>
+            <p class="color-cube-white"></p>
+            <p class="color-cube-orange"></p>
+            <p class="color-cube-red"></p>
+        </div>
+    </div>
+    <div class="size-filter-btn dropdwn-btn row no-gutters">
+        <span class="dot"></span>
+        <h3>SIZE</h3>
+        <p><i class="arrow arrow-down arrow-dropdown"></i></p>
+    </div>
+    <div class="size-dropdown drpdwn-menu">
+        <div class="sizes row no-gutters">
+            <p>S</p>
+            <p>M</p>
+            <p>L</p>
+            <p>XL</p>
+            <p>XXL</p>
+        </div>
+    </div>
+    <hr>      
+    <h5 style="color: #666666; text-align: center;"><b>RESET ALL</b></h5><hr>
+    <button class="add-cart-btn mobile-add-btn">VIEW RESULTS</button>
+
+</div>
+<div class="plp-title-nav">
+    <span class="upper-title">HELMETS </span>
+    <span>1017 items</span>
+    <hr class="solid">
+    <br>
+</div>
+
+<div class="plp-wrapper row">
+    <div class="filter-box">
+        <div class="row filter-subcategories">
+            <h5>CATEGORY</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <div class="row">
+            <span><i class="check"></i></span>
+            <p>MOTORBIKE</p>
+        </div>
+        <p>AGV</p>
+        <p>WINTERSPORTS</p>
+        <p>BIKE</p>
+        <p>EQUESTRIAN</p>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <h5>PRODUCT TYPE</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <p>LEATHER SUITS</p>
+        <p>JACKETS</p>
+        <p>PANTS</p>
+        <p>ACCESSORIES</p>
+        <div class="row">
+            <span><i class="check"></i></span>
+            <p>HELMETS</p>
+        </div>
+        <p>SHOES</p>
+        <p>BOOTS</p>
+        <p>GLOVES</p>
+        <p>SAFETY</p>
+        <p>TECHNICAL LAYERS</p>
+        <p>CASUAL WEAR</p>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <h5>GENDER</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <p>UNISEX</p>
+        <p>MEN</p>
+        <p>WOMEN</p>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <h5>PRICE</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <h5>COLOR</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <div class="row color-cubes no-gutters">
+            <p class="color-cube-green"></p>
+            <p class="color-cube-black"></p>
+            <p class="color-cube-white"></p>
+            <p class="color-cube-orange"></p>
+            <p class="color-cube-red"></p>
+        </div>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <h5>SIZE</h5>
+            <p class="minus-hide">-</p>
+        </div>
+        <div class="sizes row">
+            <p>S</p>
+            <p>M</p>
+            <p>L</p>
+            <p>XL</p>
+            <p>XXL</p>
+        </div>
+        <hr class="solid">
+        <div class="row filter-subcategories">
+            <p class="reset-filter-btn">RESET FILTERS</p>
+            <p class="minus-hide">-</p>
+        </div>
+    </div>
+    <div class="row product-box">
+        <% productObj.forEach((product) => { %>
+            <div class="col-lg-4 col-xs-6">
+                <a class="product-button" href="/product/<%= product.id %>"><img src="/images/<%= product.image_groups[0].images[0].link %>"></a>
+                <div class="color-cubes row no-gutters">
+                    <p class="column color-cube-black"></p>
+                    <p class="column color-cube-white"></p>
+                    <p class="column color-cube-red"></p>
+                    <p class="column color-cube-green"></p>
+                </div>
+                <h2 class="product-title"><%= product.name %></h2>
+                <hr style="margin: auto">
+                <p class="product-price"><%=product.price %> <%= product.currency %></p>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include footer.ejs %>
+

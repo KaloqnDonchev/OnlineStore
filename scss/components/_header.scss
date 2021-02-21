@@ -1,0 +1,77 @@
+.header-wrapper {
+    p {
+        margin: 0;
+        color: white;
+        text-align: center;
+        background-color: red;
+    }
+
+    .login-bar {
+        background-color: #1E1E1E;
+        margin: 0;
+        height: 35px;
+        div {
+            text-align: center;
+            color: white;
+            padding: 5px 12px;
+            border-right: 1px ridge lightgray;
+        }
+        span {
+            background-color: red;
+            padding: 5px;
+            margin: 4px;
+        }
+        img {
+            height: 16px;
+            width: 16px;
+            margin: 6px;
+        }
+        .cart {
+            border-right: none;
+        }
+    }
+
+    .menu-bar {
+        width: 70%;
+        margin: auto;
+        div {
+            margin-top: 20px;
+            text-align: center;
+            width: 90px;
+            height: 70px;
+            font-family: $primaryFontFamily;
+            font-size: 16px;
+        }
+        .fp-logo {
+            margin-left: 0;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.menu {
+    align-items: center;
+    justify-content: center;
+    a {
+        margin: 10px 30px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 50%;
+    }
+}
+@media only screen and (max-width: 676px) {
+    .login-bar {
+        justify-content: space-between;
+    }
+    .fp-logo-mobile {
+        border: 0 !important;
+        img {
+            width: 25px !important;
+            height: 25px !important;
+            margin: 0 !important;
+        }
+    }
+}

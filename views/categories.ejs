@@ -1,0 +1,21 @@
+<%- include header.ejs %>
+
+<div class="body-wrapper">
+
+    <% data.forEach((category) => { %>
+
+        <h1><%= category.name %></h1>
+        
+        <% category.categories.forEach((subcategory) => { %>
+            <h3><%= subcategory.name %></h3>
+            <p><%= subcategory.page_description%></p>
+            <% if (subcategory.image) { %>
+                <img src="/images/<%= subcategory.image %>">
+            <% } %>
+            <a href="/categories/<%= !url ? subcategory.id.split('-')[0] : url %>/<%= subcategory.id %>">More Info</a>    
+        <% }) %>
+        
+    <% }) %>
+</div>
+
+<%- include footer.ejs %>
